@@ -1,0 +1,52 @@
+﻿<Page x:Class="PracticTaxi.Pages.AdminRedactSchedule"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PracticTaxi.Pages"
+      mc:Ignorable="d" 
+                  MinHeight="450" MinWidth="700" MaxHeight="450" MaxWidth="700" Background="White"
+      Title="Redact">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="1" Height="30"  Margin="70,10,10,0" FontSize="16" Text="Дата:"/>
+            <TextBlock Grid.Row="2" Height="30" Margin="70,10,10,0" FontSize="16" Text="Время начала смены:"/>
+            <TextBlock Grid.Row="3" Height="30" Margin="70,10,10,0" FontSize="16" Text="Время конца смены:"/>
+            <TextBlock Grid.Row="4" Height="30" Margin="70,10,10,0" FontSize="16" Text="Введите 1 - 42:"/>
+            <TextBlock Grid.Row="5" Height="30" Margin="70,10,10,0" FontSize="16" Text="Водитель:"/>
+
+            <TextBox Grid.Column="1" Grid.Row="1" Margin="10,10,10,0" x:Name="tbdate"/>
+            <TextBox Grid.Column="1" Grid.Row="2" Margin="10,10,10,0" x:Name="tbstarttime"/>
+            <TextBox Grid.Column="1" Grid.Row="3" Margin="10,10,10,0" x:Name="tbendtime"/>
+            <TextBox Grid.Column="1" Grid.Row="4" Margin="10,10,10,0" x:Name="tbdriver" TextChanged="tbdriver_TextChanged"/>
+            <TextBox Grid.Column="1" Grid.Row="5" Margin="10,10,10,0" x:Name="tbdrivername" IsReadOnly="True"/>
+            
+        </Grid>
+
+        <StackPanel Height="350" Grid.Column="1" VerticalAlignment="Center">
+
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" Grid.Column="2">
+            <Button Height="30" Content="Сохранить" FontSize="16" x:Name="btnsave" Margin="20,0,20,0" Click="btnsave_Click"/>
+            <Button Height="30" Content="Удалить" FontSize="16" x:Name="btndelete" Margin="20,50,20,0" Click="btndelete_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

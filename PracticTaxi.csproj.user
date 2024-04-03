@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Admin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AdminOrders.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AdminRedact.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AdminRedactSchedule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AdminSchedule.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AdminUsers.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Autho.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Default.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Driver.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Profile.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Redact.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Admin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AdminOrders.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AdminRedact.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AdminRedactSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AdminSchedule.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AdminUsers.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Autho.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Default.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Driver.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Redact.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
